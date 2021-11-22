@@ -46,7 +46,7 @@ def train_step(inp, inp_value, targ, decoder_outputs, batch_OOV_num):
             # 将编码器输出 （enc_output） 传送至解码器
             predictions,  dec_hidden = G_model.decoder(dec_input, inp_value, enc_output, dec_hidden, batch_OOV_num)
             output_probs = tf.concat((output_probs,tf.expand_dims(predictions, 1)), 1)
-            # 使用教师强制，将之前输出全部作为输入
+            # 使用教师强制，将t-1输出作为输入
         output_probs = output_probs[:,1:,:]
         loss = loss_function(decoder_inputs, decoder_outputs, vocab_size, batch_OOV_num, output_probs)
 
