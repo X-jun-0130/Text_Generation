@@ -20,11 +20,8 @@ tensorflow >= 2.0
 >>Incorporating Copying Mechanism in Sequence-to-Sequence Learning
 
 >Encoder
->>key_embedding 与 value_embedding拼接
->>采用常规gru，单层
+>>key_embedding 与 value_embedding拼接 、采用常规gru，单层
 
 >Decoder
->>采用常规gru，单层
->>attention机制
->>添加copy_net机制，能够解决OOV问题，更适用于实际场景
+>>采用常规gru，单层 、attention机制 、添加copy_net机制，能够解决OOV问题，更适用于实际场景
  
