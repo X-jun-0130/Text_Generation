@@ -5,6 +5,14 @@ tensorflow >= 2.0
 
 ### 一、seq2seq_attention
 采用常规encoder(gru)-decoder(gru)结合attenion方式
+>输入
+>>来源 不 明 但是 只是 感觉 太 赞 ＼ 春丽 ／
+
+>输出
+>>好 腿 法 ， 不 知道 站 的 稳发 。
+
+>数据来源
+>>github上获取到的，训练集1800000+，应该是微博数据，太大上传不了。
 
 ### 二、seq2seq_copynet
 >输入形式
