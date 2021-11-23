@@ -78,7 +78,7 @@ train = content_list
 pre_sentence = '孩纸 。 你 绝对 是 未来 的 杰克逊 哦 ！'
 
 batch_index = 1
-best = 3.0
+best = 1.8
 optimizer = tf.keras.optimizers.Adam(learning_rate=lr)
 checkpoint = tf.train.Checkpoint(optimizer=optimizer,model=G_model)
 for epoch in range(num_epochs):
