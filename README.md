@@ -35,4 +35,12 @@ tensorflow >= 2.0
 
 >Copy机制
 >>copy机制最初是为了解决OOV问题，如当有一些专有名词不在你训练时的词表中时，那在生成时普通的seq2seq是无论如何也无法生成出该词，copyNet的encoder端与普通seq2seq一致，在decode端生成时，copy机制的原理是，让它以一定的概率为生成词，一定的概率为复制该词
- 
+
+
+
+### 三、seq2seq_pgn
+>输入形式
+>> 同二
+
+>来源
+>>Get To The Point: Summarization with Pointer-Generator Networks
