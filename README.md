@@ -44,3 +44,7 @@ tensorflow >= 2.0
 
 >来源
 >>Get To The Point: Summarization with Pointer-Generator Networks
+
+>模型特色
+1.类似copynet，解决OOV问题
+2.Coverage mechanism缓解seq2seq生成中容易出现重复问题，使句子更加连贯
